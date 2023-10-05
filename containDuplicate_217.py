@@ -17,7 +17,8 @@ def containDuplicate(nums):
 
     for i in nums:
         if i in myset:
-            return True
+            return True 
+            
         myset.add(i)
     return False
 print(containDuplicate([2,14,18,22]))
