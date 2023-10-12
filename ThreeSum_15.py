@@ -2,11 +2,6 @@ def threeSum(nums):
     res = []
     i = 0
     nums.sort()
-    if len(nums) ==3:
-        res.append(nums)
-        return nums
-    if len(nums) <= 2:
-        return res
     for a,i in enumerate(nums):
         if  a >0 and i == nums[a-1]:
             continue
