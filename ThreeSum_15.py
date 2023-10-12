@@ -10,7 +10,7 @@ def threeSum(nums):
     for a,i in enumerate(nums):
         if  a >0 and i == nums[a-1]:
             continue
-        l, r = i+1, len(nums)-1
+        l, r = a+1, len(nums)-1
         while l<r:
             if nums[i]+ nums[l] +nums[r] > 0:
                 r -=1
@@ -23,4 +23,4 @@ def threeSum(nums):
                     l +=1
     return res
 
-print(threeSum([-1,0,1,2,-1,-4]))
+print(threeSum([-1,1,0]))
